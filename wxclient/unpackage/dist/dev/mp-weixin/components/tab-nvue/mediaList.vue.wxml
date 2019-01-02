@@ -1,0 +1,27 @@
+<template name="43f76c6a">
+  <view class="_view data-v-2f5e98ce">
+    <view class="_view data-v-2f5e98ce list-cell" hover-class="uni-list-cell-hover" bindtap="handleProxy" data-eventid="{{'fjF-1'}}" data-comkey="{{$k}}">
+      <view class="_view data-v-2f5e98ce media-list" wx:if="{{data.title}}">
+        <view class="_view data-v-2f5e98ce {{[isImgRight ? 'media-image-right' : '', isImgLeft ? 'media-image-left' : '']}}">
+          <text class="_text data-v-2f5e98ce {{['media-title', isImgRight || isImgLeft ? 'media-title2' : '']}}">{{data.title}}</text>
+          <view wx:if="{{showImg}}" class="_view data-v-2f5e98ce {{[  'image-section',  isImgRight ? 'image-section-right' : '',  isImgLeft ? 'image-section-left' : '']}}">
+            <image wx:if="{{data.image_url}}" src="{{data.image_url}}" class="_image data-v-2f5e98ce {{['image-list1', isImgRight || isImgLeft ? 'image-list2' : '']}}"></image>
+            <image class="_image data-v-2f5e98ce image-list3" wx:if="{{data.image_list}}" src="{{source.url}}" wx:key="i" key="{{i}}" wx:for="{{data.image_list}}" wx:for-index="i" wx:for-item="source"></image>
+          </view>
+        </view>
+        <view class="_view data-v-2f5e98ce media-foot">
+          <view class="_view data-v-2f5e98ce media-info">
+            <text class="_text data-v-2f5e98ce info-text">{{data.source}}</text>
+            <text class="_text data-v-2f5e98ce info-text">{{data.comment_count}}条评论</text>
+            <text class="_text data-v-2f5e98ce info-text">{{data.datetime}}</text>
+          </view>
+          <view class="_view data-v-2f5e98ce max-close-view" catchtap="handleProxy" data-eventid="{{'ZRw-0'}}" data-comkey="{{$k}}">
+            <view class="_view data-v-2f5e98ce close-view">
+              <text class="_text data-v-2f5e98ce close">×</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

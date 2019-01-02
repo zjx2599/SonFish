@@ -1,0 +1,24 @@
+{
+  "name": "stonebridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "StoneBridge",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "element-ui": "^2.4.11",
+    "express": "^4.16.4",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.15.6",
+    "formidable": "^1.2.1",
+    "mongodb": "^3.1.9",
+    "mongoose": "^5.3.12",
+    "request": "^2.88.0",
+    "vue": "^2.5.21"
+  }
+}

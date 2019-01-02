@@ -1,0 +1,27 @@
+<template name="31aecf9c">
+  <view class="_view data-v-236dd8d6 content">
+    <view class="_view data-v-236dd8d6 head">
+      <button wx:if="{{!authUserInfor}}" class="_button data-v-236dd8d6 logo" type="primary" open-type="getUserInfo" bindgetuserinfo="handleProxy" data-eventid="{{'UA1-0'}}" data-comkey="{{$k}}">登录</button>
+      <label wx:if="{{!authUserInfor}}" class="_label data-v-236dd8d6">请登录</label>
+      <image wx:if="{{authUserInfor}}" class="_image data-v-236dd8d6 logo" src="{{userInfor.avatarUrl}}"></image>
+      <label wx:if="{{authUserInfor}}" class="_label data-v-236dd8d6">{{userInfor.nickName}}</label>
+    </view>
+    <view class="_view data-v-236dd8d6 split"></view>
+    <view class="_view data-v-236dd8d6 detail">
+      <view class="_view data-v-236dd8d6 uni-list">
+        <view class="_view data-v-236dd8d6 uni-list-cell" hover-class="uni-list-cell-hover">
+          <view class="_view data-v-236dd8d6 uni-list-cell-navigate uni-navigate-right"> 历史订单 </view>
+        </view>
+        <view class="_view data-v-236dd8d6 uni-list-cell" hover-class="uni-list-cell-hover">
+          <view class="_view data-v-236dd8d6 uni-list-cell-navigate uni-navigate-right"> 个人资料 </view>
+        </view>
+        <view class="_view data-v-236dd8d6 uni-list-cell" hover-class="uni-list-cell-hover">
+          <view class="_view data-v-236dd8d6 uni-list-cell-navigate uni-navigate-right"> 意见反馈 </view>
+        </view>
+        <view class="_view data-v-236dd8d6 uni-list-cell uni-list-cell-last" hover-class="uni-list-cell-hover">
+          <view class="_view data-v-236dd8d6 uni-list-cell-navigate uni-navigate-right"> 售后服务 </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
